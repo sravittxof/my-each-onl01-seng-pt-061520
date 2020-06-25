@@ -4,7 +4,6 @@ def my_each(array) # put argument(s) here
   
   while i < array.length
     yield(array[i])
-    puts "#{array[i]}"
     i = i + 1
   end
   
@@ -15,5 +14,5 @@ end
 collection = [1, 2, 3, 4]
 
 my_each(collection) do |i|
-  i
+  puts "#{array[i]}"
 end
